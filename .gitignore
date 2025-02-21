@@ -46,6 +46,7 @@ xcuserdata/
 *.xcodeproj/project.xcworkspace/xcuserdata
 *.xcodeproj/project.xcworkspace/xcshareddata
 *.xcodeproj/project.xcworkspace/xcuserdata
+*.xcbkptlist
 
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
