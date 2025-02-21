@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashScreenViewController" customModule="Streamview" customModuleProvider="target">
+            <connections>
+                <outlet property="streamviewLabel" destination="gEb-O0-CpL" id="RgR-bW-XWP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbj-RK-AwA">
+                    <rect key="frame" x="110.66666666666669" y="388.66666666666669" width="172" height="100"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="gAa-Oh-txM">
+                            <rect key="frame" x="58.333333333333329" y="0.0" width="55" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="XRw-Fg-cyu"/>
+                                <constraint firstAttribute="width" constant="55" id="k4R-ng-klV"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Streamview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEb-O0-CpL">
+                            <rect key="frame" x="0.0" y="63" width="172" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="37" id="bWI-gn-Dy9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="2qQ-Ef-4M7"/>
+                        <constraint firstAttribute="trailing" secondItem="gEb-O0-CpL" secondAttribute="trailing" id="FVJ-5S-g04"/>
+                        <constraint firstItem="gAa-Oh-txM" firstAttribute="centerX" secondItem="jbj-RK-AwA" secondAttribute="centerX" id="LHq-YT-ZN7"/>
+                        <constraint firstItem="gAa-Oh-txM" firstAttribute="top" secondItem="jbj-RK-AwA" secondAttribute="top" id="VGX-ou-uDd"/>
+                        <constraint firstItem="gEb-O0-CpL" firstAttribute="leading" secondItem="jbj-RK-AwA" secondAttribute="leading" id="bHl-Xh-PkX"/>
+                        <constraint firstItem="gEb-O0-CpL" firstAttribute="top" secondItem="gAa-Oh-txM" secondAttribute="bottom" constant="8" id="sOv-gy-z8K"/>
+                        <constraint firstAttribute="width" constant="172" id="vFw-EQ-aXM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jbj-RK-AwA" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="4Xm-E0-DD9"/>
+                <constraint firstItem="jbj-RK-AwA" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Got-38-hae"/>
+            </constraints>
+            <point key="canvasLocation" x="111" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splashImage" width="56" height="55"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E822527C2D689A9300A9882A /* Mulish-Bold.ttf */; };
+		E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */; };
+		E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */; };
+		E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */; };
 		E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB97B52D687B9000DBF0F2 /* AppDelegate.swift */; };
 		E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB97B72D687B9000DBF0F2 /* SceneDelegate.swift */; };
-		E8BB97BA2D687B9000DBF0F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB97B92D687B9000DBF0F2 /* ViewController.swift */; };
 		E8BB97BD2D687B9000DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BC2D687B9000DBF0F2 /* Base */; };
 		E8BB97BF2D687B9100DBF0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */; };
 		E8BB97C22D687B9100DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97C12D687B9100DBF0F2 /* Base */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E822527C2D689A9300A9882A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		E8BB97B22D687B9000DBF0F2 /* Streamview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BB97B52D687B9000DBF0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8BB97B72D687B9000DBF0F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E8BB97B92D687B9000DBF0F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E8BB97BC2D687B9000DBF0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BB97C12D687B9100DBF0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E89FE89D2D68857000256FC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E89FE89E2D68857F00256FC5 /* Splash */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E89FE89E2D68857F00256FC5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */,
+				E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E89FE8A32D6892A900256FC5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E89FE8A42D6892C500256FC5 /* Fonts */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E89FE8A42D6892C500256FC5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */,
+				E822527C2D689A9300A9882A /* Mulish-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		E8BB97A92D687B8F00DBF0F2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +96,12 @@
 		E8BB97B42D687B9000DBF0F2 /* Streamview */ = {
 			isa = PBXGroup;
 			children = (
+				E89FE8A32D6892A900256FC5 /* Utility */,
 				E8BB97CD2D687D8200DBF0F2 /* Modules */,
 				E8BB97CC2D687C7E00DBF0F2 /* Configuration */,
 				E8BB97CB2D687C4700DBF0F2 /* Resources */,
 				E8BB97CA2D687C0700DBF0F2 /* Storyboards */,
 				E8BB97C92D687BDC00DBF0F2 /* Core */,
-				E8BB97B92D687B9000DBF0F2 /* ViewController.swift */,
 			);
 			path = Streamview;
 			sourceTree = "<group>";
@@ -103,6 +143,7 @@
 		E8BB97CD2D687D8200DBF0F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E89FE89D2D68857000256FC5 /* Common */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -166,7 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BB97BF2D687B9100DBF0F2 /* Assets.xcassets in Resources */,
+				E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */,
+				E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */,
 				E8BB97C22D687B9100DBF0F2 /* Base in Resources */,
+				E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */,
 				E8BB97BD2D687B9000DBF0F2 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,8 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8BB97BA2D687B9000DBF0F2 /* ViewController.swift in Sources */,
 				E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */,
+				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
