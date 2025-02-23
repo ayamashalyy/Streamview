@@ -15,5 +15,14 @@ class SplashScreenViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "AppPrimaryColor")
         streamviewLabel.font = UIFont(name: "PlusJakartaSans-Bold", size: 29.0)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.navigateToOnboarding()
+        }
+    }
+    
+    private func navigateToOnboarding() {
+        let containerPageVC = ContainerPageVC(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        self.view.window?.rootViewController = containerPageVC
     }
 }

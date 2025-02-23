@@ -11,6 +11,16 @@
 		E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */; };
 		E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */; };
 		E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */; };
+		E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */; };
+		E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */; };
+		E8B0C4172D69DF6A00226ABE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */; };
+		E8B0C4182D69DF6A00226ABE /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */; };
+		E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */; };
+		E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E12D6B229100874111 /* Mulish-Regular.ttf */; };
+		E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */; };
+		E8B970E62D6B22BD00874111 /* Mulish-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E52D6B22BC00874111 /* Mulish-Light.ttf */; };
+		E8B970E82D6B2AF600874111 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B970E72D6B2AF600874111 /* Constants.swift */; };
+		E8B970ED2D6B2D6C00874111 /* OnboardingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B970EC2D6B2D6C00874111 /* OnboardingData.swift */; };
 		E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB97B52D687B9000DBF0F2 /* AppDelegate.swift */; };
 		E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BB97B72D687B9000DBF0F2 /* SceneDelegate.swift */; };
 		E8BB97BD2D687B9000DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BC2D687B9000DBF0F2 /* Base */; };
@@ -23,6 +33,16 @@
 		E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPageVC.swift; sourceTree = "<group>"; };
+		E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerPageVC.xib; sourceTree = "<group>"; };
+		E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
+		E8B970E12D6B229100874111 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
+		E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
+		E8B970E52D6B22BC00874111 /* Mulish-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Light.ttf"; sourceTree = "<group>"; };
+		E8B970E72D6B2AF600874111 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E8B970EC2D6B2D6C00874111 /* OnboardingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingData.swift; sourceTree = "<group>"; };
 		E8BB97B22D687B9000DBF0F2 /* Streamview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Streamview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8BB97B52D687B9000DBF0F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8BB97B72D687B9000DBF0F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +66,7 @@
 		E89FE89D2D68857000256FC5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E8B0C4102D69CB3200226ABE /* Onboarding */,
 				E89FE89E2D68857F00256FC5 /* Splash */,
 			);
 			path = Common;
@@ -64,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				E89FE8A42D6892C500256FC5 /* Fonts */,
+				E8B970E72D6B2AF600874111 /* Constants.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -73,8 +95,40 @@
 			children = (
 				E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */,
 				E822527C2D689A9300A9882A /* Mulish-Bold.ttf */,
+				E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */,
+				E8B970E12D6B229100874111 /* Mulish-Regular.ttf */,
+				E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */,
+				E8B970E52D6B22BC00874111 /* Mulish-Light.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E8B0C4102D69CB3200226ABE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E8B970EA2D6B2D4400874111 /* Model */,
+				E8B970E92D6B2D2B00874111 /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E8B970E92D6B2D2B00874111 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */,
+				E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */,
+				E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */,
+				E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E8B970EA2D6B2D4400874111 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8B970EC2D6B2D6C00874111 /* OnboardingData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E8BB97A92D687B8F00DBF0F2 = {
@@ -207,11 +261,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BB97BF2D687B9100DBF0F2 /* Assets.xcassets in Resources */,
+				E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */,
+				E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */,
 				E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */,
 				E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */,
 				E8BB97C22D687B9100DBF0F2 /* Base in Resources */,
 				E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */,
+				E8B970E62D6B22BD00874111 /* Mulish-Light.ttf in Resources */,
 				E8BB97BD2D687B9000DBF0F2 /* Base in Resources */,
+				E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */,
+				E8B0C4182D69DF6A00226ABE /* OnboardingViewController.xib in Resources */,
+				E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +283,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */,
+				E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */,
+				E8B0C4172D69DF6A00226ABE /* OnboardingViewController.swift in Sources */,
 				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
+				E8B970E82D6B2AF600874111 /* Constants.swift in Sources */,
+				E8B970ED2D6B2D6C00874111 /* OnboardingData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

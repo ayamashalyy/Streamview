@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="Streamview" customModuleProvider="target">
+            <connections>
+                <outlet property="onboardingButton" destination="5hD-iE-SwD" id="6VQ-yN-Z1Q"/>
+                <outlet property="onboardingDescription" destination="9nx-wv-9Fe" id="ktv-Pc-VEP"/>
+                <outlet property="onboardingImage" destination="esP-wd-WEY" id="akm-40-7i7"/>
+                <outlet property="onboardingTitle" destination="ox4-Hv-qsz" id="3TW-3R-HgC"/>
+                <outlet property="onboardingView" destination="eEG-AB-WLy" id="le4-Fw-Zw5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEG-AB-WLy">
+                    <rect key="frame" x="33" y="75" width="327" height="383"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="esP-wd-WEY">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="383"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="383" id="2Bz-Kr-wFw"/>
+                        <constraint firstItem="esP-wd-WEY" firstAttribute="leading" secondItem="eEG-AB-WLy" secondAttribute="leading" id="2Hi-K1-Syd"/>
+                        <constraint firstItem="esP-wd-WEY" firstAttribute="top" secondItem="eEG-AB-WLy" secondAttribute="top" id="Aeb-wO-JVP"/>
+                        <constraint firstAttribute="bottom" secondItem="esP-wd-WEY" secondAttribute="bottom" id="GBc-8P-YuK"/>
+                        <constraint firstAttribute="trailing" secondItem="esP-wd-WEY" secondAttribute="trailing" id="MFB-Nl-x93"/>
+                        <constraint firstAttribute="width" constant="327" id="hb1-qc-rcb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox4-Hv-qsz">
+                    <rect key="frame" x="33" y="494" width="327" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="327" id="cSk-hP-bUd"/>
+                        <constraint firstAttribute="height" constant="27" id="gfr-cq-lF9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nx-wv-9Fe">
+                    <rect key="frame" x="33" y="539" width="327" height="66"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="327" id="goP-Zo-VIx"/>
+                        <constraint firstAttribute="height" constant="66" id="wX2-Ku-imz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="OnboardingDescColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hD-iE-SwD">
+                    <rect key="frame" x="33" y="655" width="327" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="VQV-g0-eJ0"/>
+                        <constraint firstAttribute="width" constant="327" id="zqc-uE-x2u"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="onboardingButton:" destination="-1" eventType="touchUpInside" id="Zde-g2-TbX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="A5j-kW-ep9"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9nx-wv-9Fe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="1aM-xD-VMm"/>
+                <constraint firstItem="5hD-iE-SwD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="59e-gD-gm3"/>
+                <constraint firstItem="ox4-Hv-qsz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="ACo-mD-DjQ"/>
+                <constraint firstItem="ox4-Hv-qsz" firstAttribute="top" secondItem="eEG-AB-WLy" secondAttribute="bottom" constant="36" id="DnZ-lt-Z5S"/>
+                <constraint firstAttribute="trailing" secondItem="eEG-AB-WLy" secondAttribute="trailing" constant="33" id="Ork-qk-pfA"/>
+                <constraint firstItem="eEG-AB-WLy" firstAttribute="top" secondItem="A5j-kW-ep9" secondAttribute="top" constant="16" id="SlS-0b-a8f"/>
+                <constraint firstAttribute="trailing" secondItem="9nx-wv-9Fe" secondAttribute="trailing" constant="33" id="V4C-uZ-bua"/>
+                <constraint firstItem="9nx-wv-9Fe" firstAttribute="top" secondItem="ox4-Hv-qsz" secondAttribute="bottom" constant="18" id="X3h-iE-tOG"/>
+                <constraint firstAttribute="trailing" secondItem="5hD-iE-SwD" secondAttribute="trailing" constant="33" id="Yb9-de-oYQ"/>
+                <constraint firstItem="5hD-iE-SwD" firstAttribute="top" secondItem="9nx-wv-9Fe" secondAttribute="bottom" constant="50" id="agd-zD-4uh"/>
+                <constraint firstItem="eEG-AB-WLy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="bD5-FI-PFe"/>
+                <constraint firstAttribute="trailing" secondItem="ox4-Hv-qsz" secondAttribute="trailing" constant="33" id="qhS-LT-XdY"/>
+            </constraints>
+            <point key="canvasLocation" x="-105" y="123"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="OnboardingDescColor">
+            <color red="0.29803921568627451" green="0.30588235294117649" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
