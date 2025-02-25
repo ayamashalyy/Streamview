@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		987223ADAC76153D4EDF795E /* Pods_Streamview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DE384335A71B5529049010 /* Pods_Streamview.framework */; };
 		E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E822527C2D689A9300A9882A /* Mulish-Bold.ttf */; };
 		E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */; };
 		E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */; };
 		E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */; };
 		E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */; };
 		E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */; };
-		E8B0C4172D69DF6A00226ABE /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */; };
-		E8B0C4182D69DF6A00226ABE /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */; };
 		E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */; };
 		E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E12D6B229100874111 /* Mulish-Regular.ttf */; };
 		E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */; };
@@ -26,17 +25,19 @@
 		E8BB97BD2D687B9000DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BC2D687B9000DBF0F2 /* Base */; };
 		E8BB97BF2D687B9100DBF0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */; };
 		E8BB97C22D687B9100DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97C12D687B9100DBF0F2 /* Base */; };
+		E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */; };
+		E8C4ECCE2D6E30FD006FCC30 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2DD12466790E7152FCAA75FD /* Pods-Streamview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamview.release.xcconfig"; path = "Target Support Files/Pods-Streamview/Pods-Streamview.release.xcconfig"; sourceTree = "<group>"; };
+		A9698AC160A4A7121FC684A0 /* Pods-Streamview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamview.debug.xcconfig"; path = "Target Support Files/Pods-Streamview/Pods-Streamview.debug.xcconfig"; sourceTree = "<group>"; };
 		E822527C2D689A9300A9882A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
 		E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPageVC.swift; sourceTree = "<group>"; };
 		E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerPageVC.xib; sourceTree = "<group>"; };
-		E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
 		E8B970E12D6B229100874111 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -50,6 +51,9 @@
 		E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BB97C12D687B9100DBF0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8BB97C32D687B9100DBF0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		F9DE384335A71B5529049010 /* Pods_Streamview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987223ADAC76153D4EDF795E /* Pods_Streamview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13BCF59609C5B87E9558A5B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE384335A71B5529049010 /* Pods_Streamview.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5B7E4050DBE7FDA56315DD1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9698AC160A4A7121FC684A0 /* Pods-Streamview.debug.xcconfig */,
+				2DD12466790E7152FCAA75FD /* Pods-Streamview.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E89FE89D2D68857000256FC5 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +139,8 @@
 			children = (
 				E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */,
 				E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */,
-				E8B0C4152D69DF6A00226ABE /* OnboardingViewController.swift */,
-				E8B0C4162D69DF6A00226ABE /* OnboardingViewController.xib */,
+				E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */,
+				E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -136,6 +158,8 @@
 			children = (
 				E8BB97B42D687B9000DBF0F2 /* Streamview */,
 				E8BB97B32D687B9000DBF0F2 /* Products */,
+				C5B7E4050DBE7FDA56315DD1 /* Pods */,
+				13BCF59609C5B87E9558A5B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -209,9 +233,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8BB97C62D687B9100DBF0F2 /* Build configuration list for PBXNativeTarget "Streamview" */;
 			buildPhases = (
+				510979BB5DF2BF4218874A24 /* [CP] Check Pods Manifest.lock */,
 				E8BB97AE2D687B9000DBF0F2 /* Sources */,
 				E8BB97AF2D687B9000DBF0F2 /* Frameworks */,
 				E8BB97B02D687B9000DBF0F2 /* Resources */,
+				F5BD9A409ADA86E9F4E2A21D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,18 +290,60 @@
 				E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */,
 				E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */,
 				E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */,
+				E8C4ECCE2D6E30FD006FCC30 /* OnboardingViewController.xib in Resources */,
 				E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */,
 				E8BB97C22D687B9100DBF0F2 /* Base in Resources */,
 				E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */,
 				E8B970E62D6B22BD00874111 /* Mulish-Light.ttf in Resources */,
 				E8BB97BD2D687B9000DBF0F2 /* Base in Resources */,
 				E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */,
-				E8B0C4182D69DF6A00226ABE /* OnboardingViewController.xib in Resources */,
 				E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		510979BB5DF2BF4218874A24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Streamview-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5BD9A409ADA86E9F4E2A21D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Streamview/Pods-Streamview-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Streamview/Pods-Streamview-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Streamview/Pods-Streamview-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E8BB97AE2D687B9000DBF0F2 /* Sources */ = {
@@ -284,7 +352,7 @@
 			files = (
 				E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */,
 				E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */,
-				E8B0C4172D69DF6A00226ABE /* OnboardingViewController.swift in Sources */,
+				E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */,
 				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
 				E8B970E82D6B2AF600874111 /* Constants.swift in Sources */,
@@ -351,7 +419,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -414,7 +482,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -435,6 +503,7 @@
 		};
 		E8BB97C72D687B9100DBF0F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9698AC160A4A7121FC684A0 /* Pods-Streamview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -463,6 +532,7 @@
 		};
 		E8BB97C82D687B9100DBF0F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD12466790E7152FCAA75FD /* Pods-Streamview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
