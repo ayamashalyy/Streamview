@@ -79,6 +79,11 @@ class ContainerPageVC: UIPageViewController {
     
     @objc private func startButtonTapped() {
         print("Welcome")
+        UserDefaults.standard.set(true, forKey: "onboarded")
+        let mainVC = LoginViewController()
+            let navController = UINavigationController(rootViewController: mainVC)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true, completion: nil)
     }
 }
 

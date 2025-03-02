@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		987223ADAC76153D4EDF795E /* Pods_Streamview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DE384335A71B5529049010 /* Pods_Streamview.framework */; };
 		E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E822527C2D689A9300A9882A /* Mulish-Bold.ttf */; };
+		E829254C2D7483AA0083DBFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829254A2D7483AA0083DBFD /* LoginViewController.swift */; };
+		E829254D2D7483AA0083DBFD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E829254B2D7483AA0083DBFD /* LoginViewController.xib */; };
 		E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */; };
 		E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */; };
 		E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */; };
@@ -33,6 +35,8 @@
 		2DD12466790E7152FCAA75FD /* Pods-Streamview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamview.release.xcconfig"; path = "Target Support Files/Pods-Streamview/Pods-Streamview.release.xcconfig"; sourceTree = "<group>"; };
 		A9698AC160A4A7121FC684A0 /* Pods-Streamview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Streamview.debug.xcconfig"; path = "Target Support Files/Pods-Streamview/Pods-Streamview.debug.xcconfig"; sourceTree = "<group>"; };
 		E822527C2D689A9300A9882A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
+		E829254A2D7483AA0083DBFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E829254B2D7483AA0083DBFD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
@@ -83,6 +87,15 @@
 				2DD12466790E7152FCAA75FD /* Pods-Streamview.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E82925492D7483930083DBFD /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E829254A2D7483AA0083DBFD /* LoginViewController.swift */,
+				E829254B2D7483AA0083DBFD /* LoginViewController.xib */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		E89FE89D2D68857000256FC5 /* Common */ = {
@@ -221,6 +234,7 @@
 		E8BB97CD2D687D8200DBF0F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E82925492D7483930083DBFD /* Auth */,
 				E89FE89D2D68857000256FC5 /* Common */,
 			);
 			path = Modules;
@@ -295,6 +309,7 @@
 				E8BB97C22D687B9100DBF0F2 /* Base in Resources */,
 				E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */,
 				E8B970E62D6B22BD00874111 /* Mulish-Light.ttf in Resources */,
+				E829254D2D7483AA0083DBFD /* LoginViewController.xib in Resources */,
 				E8BB97BD2D687B9000DBF0F2 /* Base in Resources */,
 				E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */,
 				E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */,
@@ -354,6 +369,7 @@
 				E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */,
 				E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */,
 				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
+				E829254C2D7483AA0083DBFD /* LoginViewController.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
 				E8B970E82D6B2AF600874111 /* Constants.swift in Sources */,
 				E8B970ED2D6B2D6C00874111 /* OnboardingData.swift in Sources */,

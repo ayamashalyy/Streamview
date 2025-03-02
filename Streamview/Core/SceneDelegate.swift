@@ -21,7 +21,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         // Sets the root view controller (the first screen shown when the app launches).
-        window?.rootViewController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
+        let onboarded = UserDefaults.standard.bool(forKey: "onboarded")
+
+        // Sets the root view controller (the first screen shown when the app launches).
+        if onboarded {
+                window?.rootViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            } else {
+                window?.rootViewController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
+                
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    let onboardingVC = ContainerPageVC()
+                    self.window?.rootViewController = onboardingVC
+                }
+            }
         
         // Without this, even if you set the root view controller, the UI wouldn’t appear.
         window?.makeKeyAndVisible()

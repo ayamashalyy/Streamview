@@ -24,5 +24,6 @@ class SplashScreenViewController: UIViewController {
     private func navigateToOnboarding() {
         let containerPageVC = ContainerPageVC(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.view.window?.rootViewController = containerPageVC
+        
     }
 }
