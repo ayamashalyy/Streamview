@@ -29,6 +29,15 @@ class ContainerPageVC: UIPageViewController {
         setupSignInButton()
     }
     
+    
+    init() {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
+    
     private func setupOnboardingScreens() {
         for data in OnboardingData.onboardingScreens {
             let vc = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
@@ -81,9 +90,8 @@ class ContainerPageVC: UIPageViewController {
         print("Welcome")
         UserDefaults.standard.set(true, forKey: "onboarded")
         let mainVC = LoginViewController()
-            let navController = UINavigationController(rootViewController: mainVC)
-            navController.modalPresentationStyle = .fullScreen
-            present(navController, animated: true, completion: nil)
+        mainVC.modalPresentationStyle = .fullScreen
+        present(mainVC, animated: true, completion: nil)
     }
 }
 
@@ -120,7 +128,7 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
         let previousIndex = currentIndex - 1
         
         // Ensure previousIndex is within bounds
-        guard previousIndex >= 0 else { return arrContainers.last }
+        guard previousIndex >= 0 else { return nil}
         
         // Return the previous view controller
         return arrContainers[previousIndex]
@@ -135,7 +143,7 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
         let afterIndex = currentIndex + 1
         
         // Ensure afterIndex is within bounds
-        guard afterIndex < arrContainers.count else { return arrContainers.first}
+        guard afterIndex < arrContainers.count else { return nil}
         
         // Return the after view controller
         return arrContainers[afterIndex]

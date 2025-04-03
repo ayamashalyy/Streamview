@@ -11,11 +11,42 @@
 		E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E822527C2D689A9300A9882A /* Mulish-Bold.ttf */; };
 		E829254C2D7483AA0083DBFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829254A2D7483AA0083DBFD /* LoginViewController.swift */; };
 		E829254D2D7483AA0083DBFD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E829254B2D7483AA0083DBFD /* LoginViewController.xib */; };
+		E87C5B832D9EC3CB0038E09E /* FamilySharingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87C5B822D9EC3CB0038E09E /* FamilySharingViewController.xib */; };
+		E87C5B842D9EC3CB0038E09E /* FamilySharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87C5B812D9EC3CB0038E09E /* FamilySharingViewController.swift */; };
 		E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */; };
 		E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */; };
 		E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */; };
 		E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */; };
 		E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */; };
+		E8B1B24D2D8B1ECF0053E8DD /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1B24C2D8B1ECF0053E8DD /* UIView+Extension.swift */; };
+		E8B1B24F2D8B21FA0053E8DD /* UITextField+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B1B24E2D8B21FA0053E8DD /* UITextField+Extension .swift */; };
+		E8B20DE02D9D9424001CA3E6 /* AuthValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B20DDF2D9D9424001CA3E6 /* AuthValidator.swift */; };
+		E8B20DE22D9D99EC001CA3E6 /* SignUpViewController+UITextFieldDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B20DE12D9D99EC001CA3E6 /* SignUpViewController+UITextFieldDelegate .swift */; };
+		E8B36AFB2D9F2B1A00162D82 /* ChooseInterestsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B36AFA2D9F2B1A00162D82 /* ChooseInterestsViewController.xib */; };
+		E8B36AFC2D9F2B1A00162D82 /* ChooseInterestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B36AF92D9F2B1A00162D82 /* ChooseInterestsViewController.swift */; };
+		E8B36B022D9F341100162D82 /* CategoriesInterestsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B36B012D9F341100162D82 /* CategoriesInterestsCell.xib */; };
+		E8B36B032D9F341100162D82 /* CategoriesInterestsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B36B002D9F341100162D82 /* CategoriesInterestsCell.swift */; };
+		E8B36B052D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B36B042D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift */; };
+		E8B36B082D9F39BF00162D82 /* ChooseInterestsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B36B072D9F39BE00162D82 /* ChooseInterestsViewModel.swift */; };
+		E8B36B0A2D9F418100162D82 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B36B092D9F418100162D82 /* String+Extension.swift */; };
+		E8B375152D9486C3005F9069 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B375132D9486C3005F9069 /* OTPViewController.swift */; };
+		E8B375162D9486C3005F9069 /* OTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B375142D9486C3005F9069 /* OTPViewController.xib */; };
+		E8B375182D949B39005F9069 /* OTPViewController+UITextFieldDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B375172D949B39005F9069 /* OTPViewController+UITextFieldDelegate .swift */; };
+		E8B3751A2D94AE1F005F9069 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B375192D94AE1F005F9069 /* UIColor+Extension.swift */; };
+		E8B3751D2D94B142005F9069 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3751B2D94B142005F9069 /* ForgotPasswordViewController.swift */; };
+		E8B3751E2D94B142005F9069 /* ForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B3751C2D94B142005F9069 /* ForgotPasswordViewController.xib */; };
+		E8B375212D94BA4D005F9069 /* CreateNewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B3751F2D94BA4D005F9069 /* CreateNewPasswordViewController.swift */; };
+		E8B375222D94BA4D005F9069 /* CreateNewPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B375202D94BA4D005F9069 /* CreateNewPasswordViewController.xib */; };
+		E8B4A1EB2D9E7BF50013FEFD /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4A1E92D9E7BF50013FEFD /* CreateProfileViewController.swift */; };
+		E8B4A1EC2D9E7BF50013FEFD /* CreateProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B4A1EA2D9E7BF50013FEFD /* CreateProfileViewController.xib */; };
+		E8B4A1F02D9E9FEB0013FEFD /* UISwitch+Extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4A1EF2D9E9FEB0013FEFD /* UISwitch+Extension .swift */; };
+		E8B4A1F32D9EAA320013FEFD /* CreatePinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B4A1F12D9EAA320013FEFD /* CreatePinViewController.swift */; };
+		E8B4A1F42D9EAA320013FEFD /* CreatePinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B4A1F22D9EAA320013FEFD /* CreatePinViewController.xib */; };
+		E8B7EE552D9C48AB00B94D67 /* LoginViewController+UITextFieldDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B7EE542D9C48AB00B94D67 /* LoginViewController+UITextFieldDelegate .swift */; };
+		E8B7EE5C2D9C5B2000B94D67 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B7EE5A2D9C5B2000B94D67 /* HomeViewController.swift */; };
+		E8B7EE5D2D9C5B2000B94D67 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8B7EE5B2D9C5B2000B94D67 /* HomeViewController.xib */; };
+		E8B7EE5F2D9C5B7F00B94D67 /* UIViewController+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B7EE5E2D9C5B7F00B94D67 /* UIViewController+Extentions.swift */; };
+		E8B7EE612D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B7EE602D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift */; };
 		E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */; };
 		E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E12D6B229100874111 /* Mulish-Regular.ttf */; };
 		E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */; };
@@ -27,6 +58,8 @@
 		E8BB97BD2D687B9000DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BC2D687B9000DBF0F2 /* Base */; };
 		E8BB97BF2D687B9100DBF0F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */; };
 		E8BB97C22D687B9100DBF0F2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E8BB97C12D687B9100DBF0F2 /* Base */; };
+		E8C1AFA42D999E5900BB2863 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C1AFA32D999E5900BB2863 /* SignUpViewController.xib */; };
+		E8C1AFA52D999E5900BB2863 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1AFA22D999E5900BB2863 /* SignUpViewController.swift */; };
 		E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */; };
 		E8C4ECCE2D6E30FD006FCC30 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */; };
 /* End PBXBuildFile section */
@@ -37,11 +70,42 @@
 		E822527C2D689A9300A9882A /* Mulish-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Bold.ttf"; sourceTree = "<group>"; };
 		E829254A2D7483AA0083DBFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E829254B2D7483AA0083DBFD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E87C5B812D9EC3CB0038E09E /* FamilySharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilySharingViewController.swift; sourceTree = "<group>"; };
+		E87C5B822D9EC3CB0038E09E /* FamilySharingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FamilySharingViewController.xib; sourceTree = "<group>"; };
 		E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
 		E89FE8A72D68957300256FC5 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
 		E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerPageVC.swift; sourceTree = "<group>"; };
 		E8B0C4122D69CDA700226ABE /* ContainerPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContainerPageVC.xib; sourceTree = "<group>"; };
+		E8B1B24C2D8B1ECF0053E8DD /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E8B1B24E2D8B21FA0053E8DD /* UITextField+Extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension .swift"; sourceTree = "<group>"; };
+		E8B20DDF2D9D9424001CA3E6 /* AuthValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthValidator.swift; sourceTree = "<group>"; };
+		E8B20DE12D9D99EC001CA3E6 /* SignUpViewController+UITextFieldDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignUpViewController+UITextFieldDelegate .swift"; sourceTree = "<group>"; };
+		E8B36AF92D9F2B1A00162D82 /* ChooseInterestsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseInterestsViewController.swift; sourceTree = "<group>"; };
+		E8B36AFA2D9F2B1A00162D82 /* ChooseInterestsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseInterestsViewController.xib; sourceTree = "<group>"; };
+		E8B36B002D9F341100162D82 /* CategoriesInterestsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesInterestsCell.swift; sourceTree = "<group>"; };
+		E8B36B012D9F341100162D82 /* CategoriesInterestsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesInterestsCell.xib; sourceTree = "<group>"; };
+		E8B36B042D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ChooseInterestsViewController+UICollectionViewDelegate .swift"; sourceTree = "<group>"; };
+		E8B36B072D9F39BE00162D82 /* ChooseInterestsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseInterestsViewModel.swift; sourceTree = "<group>"; };
+		E8B36B092D9F418100162D82 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		E8B375132D9486C3005F9069 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
+		E8B375142D9486C3005F9069 /* OTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OTPViewController.xib; sourceTree = "<group>"; };
+		E8B375172D949B39005F9069 /* OTPViewController+UITextFieldDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OTPViewController+UITextFieldDelegate .swift"; sourceTree = "<group>"; };
+		E8B375192D94AE1F005F9069 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E8B3751B2D94B142005F9069 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		E8B3751C2D94B142005F9069 /* ForgotPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		E8B3751F2D94BA4D005F9069 /* CreateNewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewPasswordViewController.swift; sourceTree = "<group>"; };
+		E8B375202D94BA4D005F9069 /* CreateNewPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateNewPasswordViewController.xib; sourceTree = "<group>"; };
+		E8B4A1E92D9E7BF50013FEFD /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		E8B4A1EA2D9E7BF50013FEFD /* CreateProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProfileViewController.xib; sourceTree = "<group>"; };
+		E8B4A1EF2D9E9FEB0013FEFD /* UISwitch+Extension .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extension .swift"; sourceTree = "<group>"; };
+		E8B4A1F12D9EAA320013FEFD /* CreatePinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePinViewController.swift; sourceTree = "<group>"; };
+		E8B4A1F22D9EAA320013FEFD /* CreatePinViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreatePinViewController.xib; sourceTree = "<group>"; };
+		E8B7EE542D9C48AB00B94D67 /* LoginViewController+UITextFieldDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+UITextFieldDelegate .swift"; sourceTree = "<group>"; };
+		E8B7EE5A2D9C5B2000B94D67 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E8B7EE5B2D9C5B2000B94D67 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E8B7EE5E2D9C5B7F00B94D67 /* UIViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extentions.swift"; sourceTree = "<group>"; };
+		E8B7EE602D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateNewPasswordViewController+UITextFieldDelegate .swift"; sourceTree = "<group>"; };
 		E8B970DF2D6B228000874111 /* Mulish-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Medium.ttf"; sourceTree = "<group>"; };
 		E8B970E12D6B229100874111 /* Mulish-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-Regular.ttf"; sourceTree = "<group>"; };
 		E8B970E32D6B229D00874111 /* Mulish-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mulish-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -55,6 +119,8 @@
 		E8BB97BE2D687B9100DBF0F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8BB97C12D687B9100DBF0F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8BB97C32D687B9100DBF0F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8C1AFA22D999E5900BB2863 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E8C1AFA32D999E5900BB2863 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		F9DE384335A71B5529049010 /* Pods_Streamview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,10 +158,19 @@
 		E82925492D7483930083DBFD /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				E829254A2D7483AA0083DBFD /* LoginViewController.swift */,
-				E829254B2D7483AA0083DBFD /* LoginViewController.xib */,
+				E8B1B2492D8B14AF0053E8DD /* Views */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		E87C5B802D9EC3A90038E09E /* InterestsMovies */ = {
+			isa = PBXGroup;
+			children = (
+				E8B36B062D9F39A200162D82 /* ViewModels */,
+				E8B36AFF2D9F33B900162D82 /* Cells */,
+				E8B36AFE2D9F2B3B00162D82 /* Views */,
+			);
+			path = InterestsMovies;
 			sourceTree = "<group>";
 		};
 		E89FE89D2D68857000256FC5 /* Common */ = {
@@ -110,8 +185,7 @@
 		E89FE89E2D68857F00256FC5 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */,
-				E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */,
+				E8B1B24A2D8B14D20053E8DD /* Views */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -119,6 +193,7 @@
 		E89FE8A32D6892A900256FC5 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				E8B1B24B2D8B1EBC0053E8DD /* Extensions */,
 				E89FE8A42D6892C500256FC5 /* Fonts */,
 				E8B970E72D6B2AF600874111 /* Constants.swift */,
 			);
@@ -142,12 +217,210 @@
 			isa = PBXGroup;
 			children = (
 				E8B970EA2D6B2D4400874111 /* Model */,
-				E8B970E92D6B2D2B00874111 /* View */,
+				E8B970E92D6B2D2B00874111 /* Views */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
-		E8B970E92D6B2D2B00874111 /* View */ = {
+		E8B1B2492D8B14AF0053E8DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E87C5B802D9EC3A90038E09E /* InterestsMovies */,
+				E8B4A1E82D9E7BD10013FEFD /* CreateProfile */,
+				E8B20DE72D9DA74A001CA3E6 /* CreateNewPassword */,
+				E8B20DE62D9DA730001CA3E6 /* ForgotPassword */,
+				E8B20DE52D9DA717001CA3E6 /* OTP */,
+				E8B20DE42D9DA6F9001CA3E6 /* SignUp */,
+				E8B20DE32D9DA6D1001CA3E6 /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B1B24A2D8B14D20053E8DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E89FE89F2D6885FA00256FC5 /* SplashScreenViewController.swift */,
+				E89FE8A02D6885FA00256FC5 /* SplashScreenViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B1B24B2D8B1EBC0053E8DD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E8B1B24C2D8B1ECF0053E8DD /* UIView+Extension.swift */,
+				E8B1B24E2D8B21FA0053E8DD /* UITextField+Extension .swift */,
+				E8B375192D94AE1F005F9069 /* UIColor+Extension.swift */,
+				E8B4A1EF2D9E9FEB0013FEFD /* UISwitch+Extension .swift */,
+				E8B7EE5E2D9C5B7F00B94D67 /* UIViewController+Extentions.swift */,
+				E8B36B092D9F418100162D82 /* String+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E8B20DDE2D9D9402001CA3E6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DDF2D9D9424001CA3E6 /* AuthValidator.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E8B20DE32D9DA6D1001CA3E6 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DEC2D9DA7B3001CA3E6 /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E8B20DE42D9DA6F9001CA3E6 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DEB2D9DA7A4001CA3E6 /* Views */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		E8B20DE52D9DA717001CA3E6 /* OTP */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DEA2D9DA78E001CA3E6 /* Views */,
+			);
+			path = OTP;
+			sourceTree = "<group>";
+		};
+		E8B20DE62D9DA730001CA3E6 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DE92D9DA77C001CA3E6 /* Views */,
+			);
+			path = ForgotPassword;
+			sourceTree = "<group>";
+		};
+		E8B20DE72D9DA74A001CA3E6 /* CreateNewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				E8B20DE82D9DA762001CA3E6 /* Views */,
+			);
+			path = CreateNewPassword;
+			sourceTree = "<group>";
+		};
+		E8B20DE82D9DA762001CA3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B3751F2D94BA4D005F9069 /* CreateNewPasswordViewController.swift */,
+				E8B375202D94BA4D005F9069 /* CreateNewPasswordViewController.xib */,
+				E8B7EE602D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B20DE92D9DA77C001CA3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B3751B2D94B142005F9069 /* ForgotPasswordViewController.swift */,
+				E8B3751C2D94B142005F9069 /* ForgotPasswordViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B20DEA2D9DA78E001CA3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B375132D9486C3005F9069 /* OTPViewController.swift */,
+				E8B375142D9486C3005F9069 /* OTPViewController.xib */,
+				E8B375172D949B39005F9069 /* OTPViewController+UITextFieldDelegate .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B20DEB2D9DA7A4001CA3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8C1AFA22D999E5900BB2863 /* SignUpViewController.swift */,
+				E8C1AFA32D999E5900BB2863 /* SignUpViewController.xib */,
+				E8B20DE12D9D99EC001CA3E6 /* SignUpViewController+UITextFieldDelegate .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B20DEC2D9DA7B3001CA3E6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E829254A2D7483AA0083DBFD /* LoginViewController.swift */,
+				E829254B2D7483AA0083DBFD /* LoginViewController.xib */,
+				E8B7EE542D9C48AB00B94D67 /* LoginViewController+UITextFieldDelegate .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B36AFD2D9F2B2300162D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B4A1E92D9E7BF50013FEFD /* CreateProfileViewController.swift */,
+				E8B4A1EA2D9E7BF50013FEFD /* CreateProfileViewController.xib */,
+				E8B4A1F12D9EAA320013FEFD /* CreatePinViewController.swift */,
+				E8B4A1F22D9EAA320013FEFD /* CreatePinViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B36AFE2D9F2B3B00162D82 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E87C5B812D9EC3CB0038E09E /* FamilySharingViewController.swift */,
+				E87C5B822D9EC3CB0038E09E /* FamilySharingViewController.xib */,
+				E8B36AF92D9F2B1A00162D82 /* ChooseInterestsViewController.swift */,
+				E8B36AFA2D9F2B1A00162D82 /* ChooseInterestsViewController.xib */,
+				E8B36B042D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B36AFF2D9F33B900162D82 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8B36B002D9F341100162D82 /* CategoriesInterestsCell.swift */,
+				E8B36B012D9F341100162D82 /* CategoriesInterestsCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E8B36B062D9F39A200162D82 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E8B36B072D9F39BE00162D82 /* ChooseInterestsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E8B4A1E82D9E7BD10013FEFD /* CreateProfile */ = {
+			isa = PBXGroup;
+			children = (
+				E8B36AFD2D9F2B2300162D82 /* Views */,
+			);
+			path = CreateProfile;
+			sourceTree = "<group>";
+		};
+		E8B7EE562D9C5ADE00B94D67 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E8B7EE572D9C5AE900B94D67 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E8B7EE572D9C5AE900B94D67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8B7EE5A2D9C5B2000B94D67 /* HomeViewController.swift */,
+				E8B7EE5B2D9C5B2000B94D67 /* HomeViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E8B970E92D6B2D2B00874111 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				E8B0C4112D69CDA700226ABE /* ContainerPageVC.swift */,
@@ -155,7 +428,7 @@
 				E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */,
 				E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E8B970EA2D6B2D4400874111 /* Model */ = {
@@ -187,6 +460,7 @@
 		E8BB97B42D687B9000DBF0F2 /* Streamview */ = {
 			isa = PBXGroup;
 			children = (
+				E8B20DDE2D9D9402001CA3E6 /* Common */,
 				E89FE8A32D6892A900256FC5 /* Utility */,
 				E8BB97CD2D687D8200DBF0F2 /* Modules */,
 				E8BB97CC2D687C7E00DBF0F2 /* Configuration */,
@@ -234,6 +508,7 @@
 		E8BB97CD2D687D8200DBF0F2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				E8B7EE562D9C5ADE00B94D67 /* Home */,
 				E82925492D7483930083DBFD /* Auth */,
 				E89FE89D2D68857000256FC5 /* Common */,
 			);
@@ -304,15 +579,25 @@
 				E8B0C4142D69CDA700226ABE /* ContainerPageVC.xib in Resources */,
 				E8B970E42D6B229D00874111 /* Mulish-SemiBold.ttf in Resources */,
 				E822527D2D689A9300A9882A /* Mulish-Bold.ttf in Resources */,
+				E8B4A1EC2D9E7BF50013FEFD /* CreateProfileViewController.xib in Resources */,
+				E8B375222D94BA4D005F9069 /* CreateNewPasswordViewController.xib in Resources */,
+				E8B4A1F42D9EAA320013FEFD /* CreatePinViewController.xib in Resources */,
+				E8B36B022D9F341100162D82 /* CategoriesInterestsCell.xib in Resources */,
+				E8B375162D9486C3005F9069 /* OTPViewController.xib in Resources */,
+				E8C1AFA42D999E5900BB2863 /* SignUpViewController.xib in Resources */,
 				E8C4ECCE2D6E30FD006FCC30 /* OnboardingViewController.xib in Resources */,
 				E89FE8A22D6885FA00256FC5 /* SplashScreenViewController.xib in Resources */,
 				E8BB97C22D687B9100DBF0F2 /* Base in Resources */,
 				E89FE8A82D68957300256FC5 /* PlusJakartaSans-Bold.ttf in Resources */,
+				E8B36AFB2D9F2B1A00162D82 /* ChooseInterestsViewController.xib in Resources */,
+				E8B3751E2D94B142005F9069 /* ForgotPasswordViewController.xib in Resources */,
 				E8B970E62D6B22BD00874111 /* Mulish-Light.ttf in Resources */,
 				E829254D2D7483AA0083DBFD /* LoginViewController.xib in Resources */,
 				E8BB97BD2D687B9000DBF0F2 /* Base in Resources */,
 				E8B970E02D6B228000874111 /* Mulish-Medium.ttf in Resources */,
 				E8B970E22D6B229100874111 /* Mulish-Regular.ttf in Resources */,
+				E8B7EE5D2D9C5B2000B94D67 /* HomeViewController.xib in Resources */,
+				E87C5B832D9EC3CB0038E09E /* FamilySharingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,14 +650,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B20DE22D9D99EC001CA3E6 /* SignUpViewController+UITextFieldDelegate .swift in Sources */,
 				E8BB97B62D687B9000DBF0F2 /* AppDelegate.swift in Sources */,
+				E8B4A1F02D9E9FEB0013FEFD /* UISwitch+Extension .swift in Sources */,
+				E8B36B082D9F39BF00162D82 /* ChooseInterestsViewModel.swift in Sources */,
+				E8B36B032D9F341100162D82 /* CategoriesInterestsCell.swift in Sources */,
+				E8B375212D94BA4D005F9069 /* CreateNewPasswordViewController.swift in Sources */,
 				E8B0C4132D69CDA700226ABE /* ContainerPageVC.swift in Sources */,
+				E8B36B0A2D9F418100162D82 /* String+Extension.swift in Sources */,
+				E8B375182D949B39005F9069 /* OTPViewController+UITextFieldDelegate .swift in Sources */,
 				E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */,
+				E8B36AFC2D9F2B1A00162D82 /* ChooseInterestsViewController.swift in Sources */,
+				E87C5B842D9EC3CB0038E09E /* FamilySharingViewController.swift in Sources */,
+				E8B7EE5C2D9C5B2000B94D67 /* HomeViewController.swift in Sources */,
+				E8B1B24D2D8B1ECF0053E8DD /* UIView+Extension.swift in Sources */,
+				E8B4A1EB2D9E7BF50013FEFD /* CreateProfileViewController.swift in Sources */,
 				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
 				E829254C2D7483AA0083DBFD /* LoginViewController.swift in Sources */,
+				E8B7EE5F2D9C5B7F00B94D67 /* UIViewController+Extentions.swift in Sources */,
+				E8B7EE612D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift in Sources */,
+				E8B375152D9486C3005F9069 /* OTPViewController.swift in Sources */,
+				E8B7EE552D9C48AB00B94D67 /* LoginViewController+UITextFieldDelegate .swift in Sources */,
+				E8B3751D2D94B142005F9069 /* ForgotPasswordViewController.swift in Sources */,
+				E8C1AFA52D999E5900BB2863 /* SignUpViewController.swift in Sources */,
+				E8B36B052D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift in Sources */,
+				E8B4A1F32D9EAA320013FEFD /* CreatePinViewController.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
 				E8B970E82D6B2AF600874111 /* Constants.swift in Sources */,
+				E8B3751A2D94AE1F005F9069 /* UIColor+Extension.swift in Sources */,
+				E8B1B24F2D8B21FA0053E8DD /* UITextField+Extension .swift in Sources */,
 				E8B970ED2D6B2D6C00874111 /* OnboardingData.swift in Sources */,
+				E8B20DE02D9D9424001CA3E6 /* AuthValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
