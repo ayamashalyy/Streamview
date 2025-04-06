@@ -7,10 +7,11 @@
 
 import UIKit
 
-class ForgotPasswordViewController: UIViewController {
+class ForgotPasswordViewController: UIViewController, Coordinating{
     
     @IBOutlet weak var emailTextField: UITextField?
     @IBOutlet weak var continueButton: UIButton?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +22,7 @@ class ForgotPasswordViewController: UIViewController {
         let email = emailTextField?.text ?? ""
         if AuthValidator.isStaticEmail(email) {
             showSuccessAlert(message: "Email is valid. Proceeding to password reset!") {
-                let createNewPasswordVC = CreateNewPasswordViewController()
-                createNewPasswordVC.modalPresentationStyle = .fullScreen
-                self.present(createNewPasswordVC, animated: true)
+                self.coordinator?.eventOccurred(with: .emailVerified)
             }
         } else {
             showFailureAlert(message: "Invalid email. Please try again.")
@@ -31,6 +30,6 @@ class ForgotPasswordViewController: UIViewController {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
 }

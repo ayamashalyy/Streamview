@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var emailTextField: UITextField?
     @IBOutlet weak var passwordTextField: UITextField?
@@ -21,6 +21,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordErrorLabel: UILabel?
     @IBOutlet weak var emailErrorLabelHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var passwordErrorLabelHeightConstraint: NSLayoutConstraint!
+    var coordinator: Coordinator?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +37,7 @@ class LoginViewController: UIViewController {
         
         if AuthValidator.isStaticEmail(email) && AuthValidator.isStaticPassword(password) {
             showSuccessAlert(message: "Login successful!") {
-                let homeVC = HomeViewController()
-                homeVC.modalPresentationStyle = .fullScreen
-                self.present(homeVC, animated: true, completion: nil)
+                self.coordinator?.eventOccurred(with: .loginSuccessful)
             }
             
         } else {
@@ -46,9 +46,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func forgotPasswordTapped(_ sender: UIButton) {
-        let otpVC = OTPViewController()
-        otpVC.modalPresentationStyle = .fullScreen
-        present(otpVC, animated: true)
+        coordinator?.eventOccurred(with: .forgotPasswordTapped)
     }
     
     @IBAction func googleLoginTapped(_ sender: UIButton) {
@@ -61,8 +59,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUpTapped(_ sender: UIButton) {
-        let signUPVC = SignUpViewController()
-        signUPVC.modalPresentationStyle = .fullScreen
-        present(signUPVC, animated: true)
+        coordinator?.eventOccurred(with: .signUpTapped)
     }
 }

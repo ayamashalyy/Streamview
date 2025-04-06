@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ChooseInterestsViewController: UIViewController {
+class ChooseInterestsViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var searchTextField: UITextField?
     @IBOutlet weak var filterButton: UIButton?
@@ -15,6 +15,7 @@ class ChooseInterestsViewController: UIViewController {
     @IBOutlet weak var nextButton: UIButton?
     let viewModel = ChooseInterestsViewModel()
     var selectedInterests: [String] = []
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()

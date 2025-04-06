@@ -7,13 +7,14 @@
 
 import UIKit
 
-class CreatePinViewController: UIViewController {
+class CreatePinViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var pinTextField1: UITextField?
     @IBOutlet weak var pinTextField2: UITextField?
     @IBOutlet weak var pinTextField3: UITextField?
     @IBOutlet weak var pinTextField4: UITextField?
     @IBOutlet weak var createPinButton: UIButton?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,14 +47,12 @@ class CreatePinViewController: UIViewController {
         }
         UserDefaults.standard.set(enteredOTP, forKey: "userPIN")
         showSuccessAlert(message: "PIN created successfully!") {
-            let familySharingViewController = FamilySharingViewController()
-            familySharingViewController.modalPresentationStyle = .fullScreen
-            self.present(familySharingViewController, animated: true, completion: nil)
+            self.coordinator?.eventOccurred(with: .familySharingTapped)
         }
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
 }
 

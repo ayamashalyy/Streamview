@@ -7,9 +7,10 @@
 
 import UIKit
 
-class SplashScreenViewController: UIViewController {
+class SplashScreenViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var streamviewLabel: UILabel?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,13 +18,7 @@ class SplashScreenViewController: UIViewController {
         streamviewLabel?.font = UIFont(name: "PlusJakartaSans-Bold", size: 29.0)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.navigateToOnboarding()
+            self.coordinator?.eventOccurred(with: .splashFinished)
         }
-    }
-    
-    private func navigateToOnboarding() {
-        let containerPageVC = ContainerPageVC()
-        self.view.window?.rootViewController = containerPageVC
-        
     }
 }

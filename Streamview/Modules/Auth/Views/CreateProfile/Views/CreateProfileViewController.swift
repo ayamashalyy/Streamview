@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateProfileViewController: UIViewController {
+class CreateProfileViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var profileImageView: UIImageView?
     @IBOutlet weak var editButton: UIButton?
@@ -16,6 +16,7 @@ class CreateProfileViewController: UIViewController {
     @IBOutlet weak var kidsProfileSwitch: UISwitch?
     @IBOutlet weak var createPinButton: UIButton?
     @IBOutlet weak var withoutPinButton: UIButton?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +32,7 @@ class CreateProfileViewController: UIViewController {
     }
     
     @IBAction func createPinTapped(_ sender: UIButton) {
-        let createPinViewController = CreatePinViewController()
-        createPinViewController.modalPresentationStyle = .fullScreen
-        self.present(createPinViewController, animated: true, completion: nil)
+        coordinator?.eventOccurred(with: .createPinTapped)
     }
     
     @IBAction func withoutPinTapped(_ sender: UIButton) {
@@ -41,7 +40,7 @@ class CreateProfileViewController: UIViewController {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
 }
 

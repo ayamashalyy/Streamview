@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, Coordinating{
     
     @IBOutlet weak var emailTextField: UITextField?
     @IBOutlet weak var birthdayTextField: UITextField?
@@ -18,6 +18,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordRequirementLabel: UILabel?
     @IBOutlet weak var checkmarkImageView: UIImageView?
     @IBOutlet weak var passwordRequirementStackHeightConstraint: NSLayoutConstraint?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,23 +31,21 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func agreeButtonTapped(_ sender: UIButton) {
-//        guard let email = emailTextField?.text, !email.isEmpty,
-//              let birthday = birthdayTextField?.text, !birthday.isEmpty,
-//              let password = passwordTextField?.text, !password.isEmpty,
-//              let confirmPassword = confirmPasswordTextField?.text, !confirmPassword.isEmpty else {
-//            showAlert(message: "Please fill in all the fields.")
-//            return
-//        }
-//        
-//        showSuccessAlert(message: "Signup completed! Please log in.") {
-            let createProfileViewController = CreateProfileViewController()
-            createProfileViewController.modalPresentationStyle = .fullScreen
-            self.present(createProfileViewController, animated: true, completion: nil)
+        //        guard let email = emailTextField?.text, !email.isEmpty,
+        //              let birthday = birthdayTextField?.text, !birthday.isEmpty,
+        //              let password = passwordTextField?.text, !password.isEmpty,
+        //              let confirmPassword = confirmPasswordTextField?.text, !confirmPassword.isEmpty else {
+        //            showAlert(message: "Please fill in all the fields.")
+        //            return
+        //        }
+        //
+        //        showSuccessAlert(message: "Signup completed! Please log in.") {
+        coordinator?.eventOccurred(with: .signUpSuccessful)
         //}
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
     
     func setUpTermsLabel() {

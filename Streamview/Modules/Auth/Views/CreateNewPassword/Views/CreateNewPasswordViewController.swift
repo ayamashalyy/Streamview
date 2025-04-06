@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CreateNewPasswordViewController: UIViewController {
+class CreateNewPasswordViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var newPasswordTextField: UITextField?
     @IBOutlet weak var confirmPasswordTextField: UITextField?
@@ -15,6 +15,7 @@ class CreateNewPasswordViewController: UIViewController {
     @IBOutlet weak var passwordRequirementLabel: UILabel?
     @IBOutlet weak var checkmarkImageView: UIImageView?
     @IBOutlet weak var passwordRequirementStackHeightConstraint: NSLayoutConstraint?
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +29,7 @@ class CreateNewPasswordViewController: UIViewController {
         guard let newPassword = newPasswordTextField?.text, let confirmPassword = confirmPasswordTextField?.text else { return }
         if newPassword == confirmPassword && AuthValidator.isValidPassword(newPassword) {
             showSuccessAlert(message: "Password updated successfully!") {
-                let loginVC = LoginViewController()
-                loginVC.modalPresentationStyle = .fullScreen
-                self.present(loginVC, animated: true, completion: nil)
+                self.coordinator?.start()
             }
         } else {
             showFailureAlert(message: "Passwords do not match or do not meet requirements.")
@@ -45,6 +44,6 @@ class CreateNewPasswordViewController: UIViewController {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
 }

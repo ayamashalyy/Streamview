@@ -7,12 +7,11 @@
 
 import UIKit
 
-class FamilySharingViewController: UIViewController {
-    
-    
+class FamilySharingViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var backgroundImageView: UIImageView?
     @IBOutlet weak var scrollView: UIScrollView!
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +19,7 @@ class FamilySharingViewController: UIViewController {
     }
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
-        let chooseInterests = ChooseInterestsViewController()
-        chooseInterests.modalPresentationStyle = .fullScreen
-        self.present(chooseInterests, animated: true, completion: nil)
+        coordinator?.eventOccurred(with: .profileCreated)
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {

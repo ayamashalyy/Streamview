@@ -62,6 +62,10 @@
 		E8C1AFA52D999E5900BB2863 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C1AFA22D999E5900BB2863 /* SignUpViewController.swift */; };
 		E8C4ECCD2D6E30FD006FCC30 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */; };
 		E8C4ECCE2D6E30FD006FCC30 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */; };
+		E8CA05852DA2F21700FDA688 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA05842DA2F21700FDA688 /* Coordinator.swift */; };
+		E8CA05872DA2F25100FDA688 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA05862DA2F25100FDA688 /* MainCoordinator.swift */; };
+		E8CA05892DA2F29000FDA688 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA05882DA2F29000FDA688 /* AuthCoordinator.swift */; };
+		E8CA058B2DA2F47B00FDA688 /* AppEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8CA058A2DA2F47B00FDA688 /* AppEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +127,10 @@
 		E8C1AFA32D999E5900BB2863 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		E8C4ECCB2D6E30FD006FCC30 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		E8C4ECCC2D6E30FD006FCC30 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		E8CA05842DA2F21700FDA688 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		E8CA05862DA2F25100FDA688 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		E8CA05882DA2F29000FDA688 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		E8CA058A2DA2F47B00FDA688 /* AppEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEvent.swift; sourceTree = "<group>"; };
 		F9DE384335A71B5529049010 /* Pods_Streamview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Streamview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -460,6 +468,7 @@
 		E8BB97B42D687B9000DBF0F2 /* Streamview */ = {
 			isa = PBXGroup;
 			children = (
+				E8CA05832DA2F1F800FDA688 /* Coordinators */,
 				E8B20DDE2D9D9402001CA3E6 /* Common */,
 				E89FE8A32D6892A900256FC5 /* Utility */,
 				E8BB97CD2D687D8200DBF0F2 /* Modules */,
@@ -513,6 +522,17 @@
 				E89FE89D2D68857000256FC5 /* Common */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		E8CA05832DA2F1F800FDA688 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				E8CA05842DA2F21700FDA688 /* Coordinator.swift */,
+				E8CA05862DA2F25100FDA688 /* MainCoordinator.swift */,
+				E8CA05882DA2F29000FDA688 /* AuthCoordinator.swift */,
+				E8CA058A2DA2F47B00FDA688 /* AppEvent.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -663,9 +683,12 @@
 				E8B36AFC2D9F2B1A00162D82 /* ChooseInterestsViewController.swift in Sources */,
 				E87C5B842D9EC3CB0038E09E /* FamilySharingViewController.swift in Sources */,
 				E8B7EE5C2D9C5B2000B94D67 /* HomeViewController.swift in Sources */,
+				E8CA05892DA2F29000FDA688 /* AuthCoordinator.swift in Sources */,
 				E8B1B24D2D8B1ECF0053E8DD /* UIView+Extension.swift in Sources */,
 				E8B4A1EB2D9E7BF50013FEFD /* CreateProfileViewController.swift in Sources */,
 				E89FE8A12D6885FA00256FC5 /* SplashScreenViewController.swift in Sources */,
+				E8CA05872DA2F25100FDA688 /* MainCoordinator.swift in Sources */,
+				E8CA05852DA2F21700FDA688 /* Coordinator.swift in Sources */,
 				E829254C2D7483AA0083DBFD /* LoginViewController.swift in Sources */,
 				E8B7EE5F2D9C5B7F00B94D67 /* UIViewController+Extentions.swift in Sources */,
 				E8B7EE612D9C8C0900B94D67 /* CreateNewPasswordViewController+UITextFieldDelegate .swift in Sources */,
@@ -675,6 +698,7 @@
 				E8C1AFA52D999E5900BB2863 /* SignUpViewController.swift in Sources */,
 				E8B36B052D9F381D00162D82 /* ChooseInterestsViewController+UICollectionViewDelegate .swift in Sources */,
 				E8B4A1F32D9EAA320013FEFD /* CreatePinViewController.swift in Sources */,
+				E8CA058B2DA2F47B00FDA688 /* AppEvent.swift in Sources */,
 				E8BB97B82D687B9000DBF0F2 /* SceneDelegate.swift in Sources */,
 				E8B970E82D6B2AF600874111 /* Constants.swift in Sources */,
 				E8B3751A2D94AE1F005F9069 /* UIColor+Extension.swift in Sources */,

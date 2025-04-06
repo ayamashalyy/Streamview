@@ -9,11 +9,12 @@ import UIKit
 import CHIPageControl
 
 // MARK: - ContainerPageVC
-class ContainerPageVC: UIPageViewController {
+class ContainerPageVC: UIPageViewController, Coordinating {
     
     private var arrContainers: [OnboardingViewController] = []
     private let pageControl =  CHIPageControlJaloro()
     private var signInButton = UIButton()
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,9 +90,7 @@ class ContainerPageVC: UIPageViewController {
     @objc private func startButtonTapped() {
         print("Welcome")
         UserDefaults.standard.set(true, forKey: "onboarded")
-        let mainVC = LoginViewController()
-        mainVC.modalPresentationStyle = .fullScreen
-        present(mainVC, animated: true, completion: nil)
+        coordinator?.eventOccurred(with: .signInTapped)
     }
 }
 
@@ -159,7 +158,11 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
               let currentIndex = arrContainers.firstIndex(of: currentVC) else { return }
         
         let nextIndex = currentIndex + 1
-        guard nextIndex < arrContainers.count else { return }
+        guard nextIndex < arrContainers.count else {
+            UserDefaults.standard.set(true, forKey: "onboarded")
+            coordinator?.eventOccurred(with: .onboardingCompleted)
+            return
+        }
         
         setViewControllers([arrContainers[nextIndex]], direction: .forward, animated: true, completion: nil)
         

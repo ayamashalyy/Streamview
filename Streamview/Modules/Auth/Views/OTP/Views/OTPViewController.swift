@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OTPViewController: UIViewController {
+class OTPViewController: UIViewController, Coordinating {
     
     @IBOutlet weak var emailLabel: UILabel?
     @IBOutlet weak var otpTextField1: UITextField?
@@ -16,6 +16,7 @@ class OTPViewController: UIViewController {
     @IBOutlet weak var otpTextField4: UITextField?
     @IBOutlet weak var continueButton: UIButton?
     @IBOutlet weak var resendCodeButton: UIButton?
+    var coordinator:  Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,9 +50,7 @@ class OTPViewController: UIViewController {
             showAlert(message: "Please enter all the digits.")
         } else if AuthValidator.isValidOTP(enteredOTP) {
             showSuccessAlert(message: "OTP validated successfully!") {
-                let forgotPasswordVC = ForgotPasswordViewController()
-                forgotPasswordVC.modalPresentationStyle = .fullScreen
-                self.present(forgotPasswordVC, animated: true)
+                self.coordinator?.eventOccurred(with: .otpVerified)
             }
         } else {
             showFailureAlert(message: "The OTP is incorrect, please try again.")
@@ -64,6 +63,6 @@ class OTPViewController: UIViewController {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        dismiss(animated: true)
+        coordinator?.eventOccurred(with: .dismiss)
     }
 }
