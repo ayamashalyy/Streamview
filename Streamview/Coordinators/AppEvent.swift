@@ -7,18 +7,33 @@
 
 import Foundation
 
-enum AppEvent {
-    case splashFinished
-    case onboardingCompleted
-    case signInTapped
-    case loginSuccessful
-    case forgotPasswordTapped
-    case signUpTapped
-    case otpVerified
-    case emailVerified
-    case signUpSuccessful
-    case createPinTapped
-    case familySharingTapped
-    case profileCreated
-    case dismiss
+protocol AppEvent {}
+
+enum OnboardingEvent: AppEvent {
+    case didFinishSplash
+    case didCompleteOnboarding
+}
+
+
+enum AuthNavigationEvent: AppEvent {
+    case didTapSignIn
+    case didLoginSuccessfully
+    case didTapForgotPassword
+    case didTapSignUp
+    case didVerifyOTP
+    case didVerifyEmail
+    case didCompleteSignUp
+}
+
+enum ProfileEvent: AppEvent {
+    case didTapCreatePin
+    case didCreateProfile
+}
+
+enum SettingsEvent: AppEvent {
+    case didTapFamilySharing
+}
+
+enum GeneralEvent: AppEvent {
+    case didDismiss
 }

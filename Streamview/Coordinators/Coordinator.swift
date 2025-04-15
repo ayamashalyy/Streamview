@@ -12,9 +12,10 @@ protocol Coordinator: AnyObject {
     
     var navigationController: UINavigationController? { get set }
     var childCoordinators: [Coordinator] { get set }
-    
+    var parentCoordinator: Coordinator? { get set }
     func eventOccurred(with type: AppEvent)
     func start()
+    func removeChildCoordinator(_ coordinator: Coordinator)
 }
 
 protocol Coordinating: AnyObject {

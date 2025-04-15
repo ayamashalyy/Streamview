@@ -12,6 +12,7 @@ class AuthCoordinator: Coordinator  {
     
     var navigationController: UINavigationController?
     var childCoordinators: [Coordinator] = []
+    weak var parentCoordinator: Coordinator?
     
     init(navigationController: UINavigationController?) {
         self.navigationController = navigationController
@@ -19,28 +20,49 @@ class AuthCoordinator: Coordinator  {
     
     func eventOccurred(with type: AppEvent) {
         switch type {
-        case .loginSuccessful:
-            let homeVC = HomeViewController()
-            homeVC.modalPresentationStyle = .fullScreen
-            navigationController?.present(homeVC, animated: true, completion: nil)
-        case .forgotPasswordTapped:
-            showOTPScreen()
-        case .signUpTapped:
-            showSignUpScreen()
-        case .otpVerified:
-            showForgotPasswordScreen()
-        case .emailVerified:
-            showCreateNewPasswordScreen()
-        case .signUpSuccessful:
-            showCreateProfileScreen()
-        case .createPinTapped:
-            showCeatePinProfileScreen()
-        case .familySharingTapped:
-            showFamilySharingScreen()
-        case .profileCreated:
-            showChooseInterestsScreen()
-        case .dismiss:
-            navigationController?.popViewController(animated: true)
+        case let event as AuthNavigationEvent:
+            switch event {
+            case .didLoginSuccessfully:
+                let homeVC = HomeViewController()
+                homeVC.modalPresentationStyle = .fullScreen
+                navigationController?.present(homeVC, animated: true) { [weak self] in
+                    guard let self = self else { return }
+                    self.parentCoordinator?.removeChildCoordinator(self)
+                }
+            case .didTapForgotPassword:
+                showOTPScreen()
+            case .didTapSignUp:
+                showSignUpScreen()
+            case .didVerifyOTP:
+                showForgotPasswordScreen()
+            case .didVerifyEmail:
+                showCreateNewPasswordScreen()
+            case .didCompleteSignUp:
+                showCreateProfileScreen()
+            default:
+                break
+            }
+            
+        case let event as ProfileEvent:
+            switch event {
+            case .didTapCreatePin:
+                showCeatePinProfileScreen()
+            case .didCreateProfile:
+                showChooseInterestsScreen()
+            }
+            
+        case let event as SettingsEvent:
+            switch event {
+            case .didTapFamilySharing:
+                showFamilySharingScreen()
+            }
+            
+        case let event as GeneralEvent:
+            switch event {
+            case .didDismiss:
+                navigationController?.popViewController(animated: true)
+            }
+            
         default:
             break
         }
@@ -48,6 +70,10 @@ class AuthCoordinator: Coordinator  {
     
     func start() {
         showLoginScreen()
+    }
+    
+    func removeChildCoordinator(_ coordinator: Coordinator) {
+        childCoordinators.removeAll { $0 === coordinator }
     }
     
     private func showLoginScreen() {
