@@ -9,11 +9,12 @@ import UIKit
 import CHIPageControl
 
 // MARK: - ContainerPageVC
-class ContainerPageVC: UIPageViewController {
+class ContainerPageVC: UIPageViewController, Coordinating {
     
     private var arrContainers: [OnboardingViewController] = []
     private let pageControl =  CHIPageControlJaloro()
     private var signInButton = UIButton()
+    var coordinator: Coordinator?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,15 @@ class ContainerPageVC: UIPageViewController {
         
         setupPageControl()
         setupSignInButton()
+    }
+    
+    
+    init() {
+        super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
     }
     
     private func setupOnboardingScreens() {
@@ -80,10 +90,7 @@ class ContainerPageVC: UIPageViewController {
     @objc private func startButtonTapped() {
         print("Welcome")
         UserDefaults.standard.set(true, forKey: "onboarded")
-        let mainVC = LoginViewController()
-            let navController = UINavigationController(rootViewController: mainVC)
-            navController.modalPresentationStyle = .fullScreen
-            present(navController, animated: true, completion: nil)
+        coordinator?.eventOccurred(with: AuthNavigationEvent.didTapSignIn)
     }
 }
 
@@ -120,7 +127,7 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
         let previousIndex = currentIndex - 1
         
         // Ensure previousIndex is within bounds
-        guard previousIndex >= 0 else { return arrContainers.last }
+        guard previousIndex >= 0 else { return nil}
         
         // Return the previous view controller
         return arrContainers[previousIndex]
@@ -135,7 +142,7 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
         let afterIndex = currentIndex + 1
         
         // Ensure afterIndex is within bounds
-        guard afterIndex < arrContainers.count else { return arrContainers.first}
+        guard afterIndex < arrContainers.count else { return nil}
         
         // Return the after view controller
         return arrContainers[afterIndex]
@@ -151,7 +158,11 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
               let currentIndex = arrContainers.firstIndex(of: currentVC) else { return }
         
         let nextIndex = currentIndex + 1
-        guard nextIndex < arrContainers.count else { return }
+        guard nextIndex < arrContainers.count else {
+            UserDefaults.standard.set(true, forKey: "onboarded")
+            coordinator?.eventOccurred(with: OnboardingEvent.didCompleteOnboarding)
+            return
+        }
         
         setViewControllers([arrContainers[nextIndex]], direction: .forward, animated: true, completion: nil)
         

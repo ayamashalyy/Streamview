@@ -11,32 +11,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
-        // Tries to cast scene as UIWindowScene.
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        // Creates a new UIWindow and associates it with the current windowScene.
-        window = UIWindow(windowScene: windowScene)
+        let navVC = UINavigationController()
+        navVC.isNavigationBarHidden = true
         
-        // Sets the root view controller (the first screen shown when the app launches).
-        let onboarded = UserDefaults.standard.bool(forKey: "onboarded")
-
-        // Sets the root view controller (the first screen shown when the app launches).
-        if onboarded {
-                window?.rootViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
-            } else {
-                window?.rootViewController = SplashScreenViewController(nibName: "SplashScreenViewController", bundle: nil)
-                
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                    let onboardingVC = ContainerPageVC()
-                    self.window?.rootViewController = onboardingVC
-                }
-            }
+        let coordinator = MainCoordinator()
+        coordinator.navigationController = navVC
         
-        // Without this, even if you set the root view controller, the UI wouldn’t appear.
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = navVC
+        window.makeKeyAndVisible()
+        self.window = window
+        
+        coordinator.start()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Streamview" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Streamview" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,8 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjs-iX-IbM">
-                    <rect key="frame" x="144.66666666666666" y="424.66666666666669" width="104" height="27.666666666666686"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKb-w7-Ehy">
+                    <rect key="frame" x="0.0" y="381" width="393" height="21"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -29,10 +29,12 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="zjs-iX-IbM" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="AtY-fU-fGe"/>
-                <constraint firstItem="zjs-iX-IbM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tR3-uy-NYP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fKb-w7-Ehy" secondAttribute="bottom" constant="416" id="Qj3-a8-KUZ"/>
+                <constraint firstItem="fKb-w7-Ehy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="322" id="eRJ-2n-VXK"/>
+                <constraint firstItem="fKb-w7-Ehy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iOb-M8-eMd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fKb-w7-Ehy" secondAttribute="trailing" id="xWm-8U-CZc"/>
             </constraints>
-            <point key="canvasLocation" x="7" y="13"/>
+            <point key="canvasLocation" x="1" y="20"/>
         </view>
     </objects>
     <resources>
