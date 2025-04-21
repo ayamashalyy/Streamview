@@ -50,7 +50,7 @@ class OTPViewController: UIViewController, Coordinating {
             showAlert(message: "Please enter all the digits.")
         } else if AuthValidator.isValidOTP(enteredOTP) {
             showSuccessAlert(message: "OTP validated successfully!") {
-                self.coordinator?.eventOccurred(with: .otpVerified)
+                self.coordinator?.eventOccurred(with: AuthNavigationEvent.didVerifyOTP)
             }
         } else {
             showFailureAlert(message: "The OTP is incorrect, please try again.")
@@ -63,6 +63,6 @@ class OTPViewController: UIViewController, Coordinating {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
 }

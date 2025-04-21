@@ -40,12 +40,12 @@ class SignUpViewController: UIViewController, Coordinating{
         //        }
         //
         //        showSuccessAlert(message: "Signup completed! Please log in.") {
-        coordinator?.eventOccurred(with: .signUpSuccessful)
+        coordinator?.eventOccurred(with: AuthNavigationEvent.didCompleteSignUp)
         //}
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
     
     func setUpTermsLabel() {

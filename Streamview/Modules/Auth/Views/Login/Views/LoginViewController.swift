@@ -37,7 +37,7 @@ class LoginViewController: UIViewController, Coordinating {
         
         if AuthValidator.isStaticEmail(email) && AuthValidator.isStaticPassword(password) {
             showSuccessAlert(message: "Login successful!") {
-                self.coordinator?.eventOccurred(with: .loginSuccessful)
+                self.coordinator?.eventOccurred(with: AuthNavigationEvent.didLoginSuccessfully)
             }
             
         } else {
@@ -46,7 +46,7 @@ class LoginViewController: UIViewController, Coordinating {
     }
     
     @IBAction func forgotPasswordTapped(_ sender: UIButton) {
-        coordinator?.eventOccurred(with: .forgotPasswordTapped)
+        coordinator?.eventOccurred(with: AuthNavigationEvent.didTapForgotPassword)
     }
     
     @IBAction func googleLoginTapped(_ sender: UIButton) {
@@ -59,6 +59,6 @@ class LoginViewController: UIViewController, Coordinating {
     }
     
     @IBAction func signUpTapped(_ sender: UIButton) {
-        coordinator?.eventOccurred(with: .signUpTapped)
+        coordinator?.eventOccurred(with: AuthNavigationEvent.didTapSignUp)
     }
 }

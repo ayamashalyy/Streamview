@@ -32,7 +32,7 @@ class CreateProfileViewController: UIViewController, Coordinating {
     }
     
     @IBAction func createPinTapped(_ sender: UIButton) {
-        coordinator?.eventOccurred(with: .createPinTapped)
+        coordinator?.eventOccurred(with: ProfileEvent.didTapCreatePin)
     }
     
     @IBAction func withoutPinTapped(_ sender: UIButton) {
@@ -40,7 +40,7 @@ class CreateProfileViewController: UIViewController, Coordinating {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
 }
 

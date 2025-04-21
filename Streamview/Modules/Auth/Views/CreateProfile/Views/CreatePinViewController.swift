@@ -47,12 +47,12 @@ class CreatePinViewController: UIViewController, Coordinating {
         }
         UserDefaults.standard.set(enteredOTP, forKey: "userPIN")
         showSuccessAlert(message: "PIN created successfully!") {
-            self.coordinator?.eventOccurred(with: .familySharingTapped)
+            self.coordinator?.eventOccurred(with: SettingsEvent.didTapFamilySharing)
         }
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
 }
 

@@ -90,7 +90,7 @@ class ContainerPageVC: UIPageViewController, Coordinating {
     @objc private func startButtonTapped() {
         print("Welcome")
         UserDefaults.standard.set(true, forKey: "onboarded")
-        coordinator?.eventOccurred(with: .signInTapped)
+        coordinator?.eventOccurred(with: AuthNavigationEvent.didTapSignIn)
     }
 }
 
@@ -160,7 +160,7 @@ extension ContainerPageVC: UIPageViewControllerDataSource, UIPageViewControllerD
         let nextIndex = currentIndex + 1
         guard nextIndex < arrContainers.count else {
             UserDefaults.standard.set(true, forKey: "onboarded")
-            coordinator?.eventOccurred(with: .onboardingCompleted)
+            coordinator?.eventOccurred(with: OnboardingEvent.didCompleteOnboarding)
             return
         }
         

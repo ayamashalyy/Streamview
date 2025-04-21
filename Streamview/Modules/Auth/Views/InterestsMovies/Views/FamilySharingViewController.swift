@@ -19,7 +19,7 @@ class FamilySharingViewController: UIViewController, Coordinating {
     }
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
-        coordinator?.eventOccurred(with: .profileCreated)
+        coordinator?.eventOccurred(with: ProfileEvent.didCreateProfile)
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {

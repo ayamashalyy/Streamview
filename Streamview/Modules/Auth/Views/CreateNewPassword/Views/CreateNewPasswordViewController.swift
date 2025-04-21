@@ -44,6 +44,6 @@ class CreateNewPasswordViewController: UIViewController, Coordinating {
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
 }

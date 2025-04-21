@@ -22,7 +22,7 @@ class ForgotPasswordViewController: UIViewController, Coordinating{
         let email = emailTextField?.text ?? ""
         if AuthValidator.isStaticEmail(email) {
             showSuccessAlert(message: "Email is valid. Proceeding to password reset!") {
-                self.coordinator?.eventOccurred(with: .emailVerified)
+                self.coordinator?.eventOccurred(with: AuthNavigationEvent.didVerifyEmail)
             }
         } else {
             showFailureAlert(message: "Invalid email. Please try again.")
@@ -30,6 +30,6 @@ class ForgotPasswordViewController: UIViewController, Coordinating{
     }
     
     @IBAction func dismissScreen(_ sender: UIBarButtonItem) {
-        coordinator?.eventOccurred(with: .dismiss)
+        coordinator?.eventOccurred(with: GeneralEvent.didDismiss)
     }
 }

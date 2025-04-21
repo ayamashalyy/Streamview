@@ -18,7 +18,7 @@ class SplashScreenViewController: UIViewController, Coordinating {
         streamviewLabel?.font = UIFont(name: "PlusJakartaSans-Bold", size: 29.0)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            self.coordinator?.eventOccurred(with: .splashFinished)
+            self.coordinator?.eventOccurred(with: OnboardingEvent.didFinishSplash)
         }
     }
 }
